@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Guía Visual: &lt;div&gt; vs &lt;section&gt;</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background-color: #F9FAFB;
+      color: #2D3748;
+      line-height: 1.6;
+      padding: 2rem;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 1rem;
+      color: #1A202C;
+    }
+
+    h1 {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      color: #256EFF;
+    }
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* --- Tarjetas de ejemplo --- */
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      margin-bottom: 2rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+      border-left: 5px solid #256EFF;
+    }
+
+    .card.div {
+      border-left-color: #4CAF50;
+    }
+
+    .card.section {
+      border-left-color: #256EFF;
+    }
+
+    code {
+      background: #E2E8F0;
+      padding: 0.2rem 0.4rem;
+      border-radius: 4px;
+      font-family: monospace;
+      color: #2D3748;
+    }
+
+    .example-box {
+      padding: 1rem;
+      margin: 1rem 0;
+      border-radius: 8px;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .example-div {
+      background-color: #E8F5E9;
+      color: #2E7D32;
+    }
+
+    .example-section {
+      background-color: #E3F2FD;
+      color: #1565C0;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 3rem;
+      color: #718096;
+      font-size: 0.9rem;
+    }
+  </style>
+  <body>
+  <div class="container">
+    <h1>🔍 Diferencias entre &lt;div&gt; y &lt;section&gt;</h1>
+
+    <!-- Ejemplo de <div> -->
+    <div class="card div">
+      <h2><code>&lt;div&gt;</code> – Contenedor genérico</h2>
+      <p>
+        El elemento <code>&lt;div&gt;</code> es un contenedor <strong>sin significado semántico</strong>. 
+        Se usa principalmente para agrupar elementos con fines de estilo o manipulación con JavaScript.
+      </p>
+      <p><strong>¿Cuándo usarlo?</strong> Cuando no necesitas transmitir estructura o significado al contenido.</p>
+
+      <div class="example-box example-div">
+        Este es un ejemplo visual de un &lt;div&gt;
+      </div>
+      <pre><code>&lt;div class="contenedor"&gt;
+  &lt;p&gt;Contenido dentro de un div&lt;/p&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+
+    <!-- Ejemplo de <section> -->
+    <div class="card section">
+      <h2><code>&lt;section&gt;</code> – Sección temática</h2>
+      <p>
+        El elemento <code>&lt;section&gt;</code> tiene <strong>significado semántico</strong>: representa una sección temática del documento, 
+        como capítulos, encabezados o grupos de contenido relacionado.
+      </p>
+      <p><strong>¿Cuándo usarlo?</strong> Cuando el contenido forma parte de una unidad lógica con un título implícito o explícito.</p>
+
+      <div class="example-box example-section">
+        Este es un ejemplo visual de una &lt;section&gt;</div>
+      <pre><code>&lt;section&gt;
+  &lt;h2&gt;Introducción&lt;/h2&gt;
+  &lt;p&gt;Este es el contenido de la sección.&lt;/p&gt;
+&lt;/section&gt;</code></pre>
+    </div>
+
+    <footer>
+      💡 Recuerda: Usa <code>&lt;section&gt;</code> para estructura semántica y <code>&lt;div&gt;</code> para diseño o agrupación técnica.
+    </footer>
+  </div>
+  </body>
+</html>
