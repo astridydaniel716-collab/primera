@@ -11,3 +11,16 @@ h1{
     font-style:initial; /* tipo de letra*/
     text-align: center;
 }
+
+button {
+    background: rgba(238, 171, 27, 0.342);
+    padding: 12px;
+    border: 2px solid #332f0d;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 30%;
+}
+
+div.class.img{
+    margin-left: 30%;
+}
