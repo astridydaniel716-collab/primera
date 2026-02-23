@@ -1,0 +1,43 @@
+body{
+    background: rgb(243, 245, 219); /* color de fondo*/
+    color:rgb(0, 0, 0); /* color de letra*/
+    font-style: normal;  /* tipo de letra*/
+    font-size: larger; /* tamaño de letra*/
+    text-align: justify;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1{
+    background: rgba(238, 171, 27, 0.342); /* color de fondo*/
+    color:rgb(0, 0, 0); /* color de letra*/
+    font-style:initial; /* tipo de letra*/
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+button {
+    background: rgba(238, 171, 27, 0.342);
+    padding: 12px;
+    border: 2px solid #332f0d;
+    border-radius: 8px;
+    font-size: 16px;
+    margin-left: 46%;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    
+    
+}
+
+.ejemplo{
+    margin-left: center;
+    background:  rgba(238, 171, 27, 0.342);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    margin-left: 38%;
+    margin-right: 38%;
+}

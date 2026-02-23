@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
     <title>web</title>
-    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/conceptos.css">
 </head>
 <body>
     <h1> Conceptos</h1>
@@ -34,24 +34,72 @@ Etiquetas
         </div>
     </p><br>
      <strong>Formularios</strong><br>
-    <p> Sirven para capturar información del usuario. se usa con un <code>&lt;input &gt;</code>  ( para objetos como caja de texto, botones) y el  type define que tipo de objeto es ( texto, password, number)</p><br>
-
+    <p> Sirven para capturar información del usuario. se usa con un <code>&lt;input &gt;</code>  ( para objetos como caja de texto, botones) y el  type define que tipo de objeto es ( texto, password, number)</p> Ejemplo: 
+<code>&lt;input type= "text" id="nombre" name= "nombre" placeholder= "Juan"&gt;</code><br><br>
     <strong>Ciclos (For-While)</strong><br>
     <p>Los ciclos for y while en JavaScript son estructuras fundamentales para repetir bloques de código. El ciclo for se usa cuando conoces de antemano el número exacto de iteraciones (ideal para recorrer arreglos), mientras que while es mejor para repetir código basándose en una condición lógica, útil cuando no sabes cuántas veces se ejecutará</p><br>
-    Ejemplos : <br><br>
-    <div class="img">
-       <img src="imagenes/ciclofor.png" alt="Ejemplo de ciclo For"> 
-    </div>
 
-     <div class="img">
-       <img src="imagenes/ciclowhile.png" alt="Ejemplo de ciclo While"> 
-    </div><br>
+    <div class=" ejemplo"> 
+         
+         <strong>Ejemplo ciclo While: </strong><br><br>
+    <code>&lt;function validar() { <br>
+        alert("ciclo para")<br>
+        for (a=1; a <= 60; a++) {<br>
+            alert ("veces:  " + a + "Para")<br>
+        }<br>
+    }</code> </div> <br><br>
+<div class=" ejemplo">
+        <strong> Ejemplo ciclo While: </strong><br><br>
+       <code>&lt;function multiplicar() { <br>
+       var i= 1;<br>
+        var resultado= ""; <br>
+            while (i<= 12) {<br>
+        resultado += `5 * ${i} = ${5 * i} \n`;<br>
+        i ++; <br>
+            } <br>
+           alert (resultado); <br> 
+    }</code> <br> 
+</div><br>
 
     <strong>Arreglos (Array)</strong><br>
-    <p>Un array en JavaScript es una estructura de datos ordenada, tipo lista y especial, que permite almacenar múltiples valores (números, cadenas, objetos) en una sola variable, utilizando corchetes []. Los elementos se acceden mediante índices numéricos que comienzan en 0, y el tamaño es dinámico. </p><br>
- <div class="img">
-       <img src="imagenes/array.jfif" alt="Ejemplo de un array"> 
-    </div><br>
+    <p>Un array en JavaScript es una estructura de datos ordenada, tipo lista y especial, que permite almacenar múltiples valores (números, cadenas, objetos) en una sola variable, utilizando corchetes []. Los elementos se acceden mediante índices numéricos que comienzan en 0, y el tamaño es dinámico. <br><br> Algunas etiquetas usadas en array: <br>
+    
+        <code>unshift</code> : Guarda un elemento al inicio del array<br>
+        <code>shift</code> : Elimina el primer elemento del array<br>
+        <code>pop</code> : Elimina el último elemento del array<br><br></p>
+        
+    <div class=" ejemplo">
+        <strong> Ejemplo de array: </strong><br><br>
+       <code>&lt;let colors = ['red', 'green', 'blue']; // 3<br>
+       console.log (colors.length);<br>
+        colors.push('yellow'); <br>
+            console.log(colors.length); // 4<br>
+      </code> <br> 
+</div><br><br>
+
+<strong>¿Qué es un repositorio?</strong><br>
+<p>Un repositorio es un espacio centralizado, generalmente en la nube o en un servidor, utilizado para almacenar, gestionar, organizar y preservar archivos digitales, código fuente o datos de manera estructurada. Permite el control de versiones, el acceso compartido y la colaboración, siendo fundamental en el desarrollo de software. Uno muy común es el GitHub <br><br>
+
+Pasos para subir información a GitHub: <br>
+1- Abrir la consola en Visual Studio Code (ctrl + shift + ñ)<br>
+2- git init (para inicializar)<br>
+3- git config user.name (el nombre del usuario en GitHub)<br>
+4- git config user.email (el email de GitHub)<br>
+5- git checkout -b xxx (colocar el nombre)
+6- git add . ( adiciona de manera local)<br>
+7-git commit -m " xxx " ( darle un sobrenombre para identificar la actualización)<br>
+8- git branch -M nombre (colocar el mismo nombre que se colocó en el paso 5, esto crea una rama en el repositorio)<br>
+9- Abrir GitHub y crear un repositorio <br>
+10- Copiar el link que aparece en GitHub remote <br>
+10- git push -u origin nombre (el nombre que se colocó en el paso 5 y 8)<br><br>
+
+Pasos para actualizar información: <br>
+1- git init <br>
+2- git add . <br>
+3- git commit -m "sobrenombre"<br>
+4- git push -u origin nombre (nombre de la rama en donde está el repositorio)<br><br>
+</p>
+
 
 </body>
 </html>
